@@ -5,11 +5,27 @@ import Contact from './components/Contact';
 
 const projects = [
   {
-      title: 'Project title',
-      explanation: 'Lorem ipsum ind anata las tilrafla man do init gallitsray for in dinast man dealer.',
+      title: 'Ranter',
+      explanation: 'A social media application inspired by Twitter.',
+      technologies: [
+        'NodeJS',
+        'Bootstrap',
+        'MySQL & Seqluelize',
+        'Handlebars'
+      ],
       liveLink: 'http://ranter2-0.herokuapp.com',
       ghLink: 'https://github.com/maplesyrupman/Ranter',
       image: require('./images/projects/ranter.png')
+  },
+  {
+    title: 'Photo Port',
+    explanation: 'A portfolio site for a photographer.',
+    technologies: [
+      'React'
+    ],
+    liveLink: 'http://ranter2-0.https://maplesyrupman.github.io/photo-port/',
+    ghLink: 'https://github.com/maplesyrupman/photo-port/blob/main/README.md',
+    image: require('./images/projects/photo-port.png')
   }
 ] 
 
@@ -17,8 +33,8 @@ function App() {
   return (
     <div className='flex flex-col items-center py-10'>
       <Hero />
-      <div className='flex flex-col items-center'>
-        <h2 className='mb-4 text-4xl'>Projects</h2>
+      <div className='lg:w-7/12'>
+        <h2 className='mb-4 text-4xl text-center'>Projects</h2>
         {projects.map(project => <Project project={project} key={project.title}/>)}
       </div>
       <Contact />
