@@ -1,9 +1,11 @@
 @tailwind base;
 
-body {
-    border: 11px solid black;
-    min-height: 100vh;
-  }
+html {
+  position: relative;
+  min-height: 100%;
+  border-left: 11px solid black;
+  border-right: 11px solid black;
+}
 
 .items-center {
   align-items: center;

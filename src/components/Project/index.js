@@ -1,9 +1,9 @@
 import UseCollapse from 'react-collapsed'
-import { FaGithub } from 'react-icons/fa'
+import { FaGithub, FaFirefoxBrowser as FaFF } from 'react-icons/fa'
 
 export default function Project({ project }) {
     const { title, image, explanation, liveLink, ghLink } = project
-    const {getCollapseProps, getToggleProps, isExpanded } = UseCollapse()
+    const { getCollapseProps, getToggleProps, isExpanded } = UseCollapse()
     return (
         <div className="collapsible lg:mx-20 bg-white text-center border border-4 border-black text-white my-2">
             <div className="header py-3 px-6 bg-black" {...getToggleProps()}>
@@ -32,10 +32,13 @@ export default function Project({ project }) {
                                 </ul>
                             </div>
                             <div className="flex flex-col">
-                                <a href={liveLink} className="">ranter2-0.herokuapp.com</a>
+                                <a href={liveLink} className="whitespace-nowrap">
+                                    <FaFF className='inline-block mb-0.5' />{' '}
+                                    <p className='inline-block hover:underline'>Live Site</p>
+                                </a>
                                 <a href={ghLink} className="whitespace-nowrap">
                                     <FaGithub className="inline-block mb-0.5" />{' '}
-                                    <p className="inline-block">README.md</p>
+                                    <p className="inline-block hover:underline">README</p>
                                 </a>
                             </div>
                         </div>

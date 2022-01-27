@@ -4,7 +4,7 @@ import { GiChessKnight } from 'react-icons/gi'
 
 export default function Contact() {
     return (
-        <div className="lg:w-7/12 flex flex-col gap-3 py-10 lg:px-16 items-center text-center">
+        <div className="lg:w-7/12 flex flex-col gap-3 lg:px-16 items-center text-center">
             <h2 className="text-4xl">Contact</h2>
             <div className="px-20">
                 <p>If you want to get in touch to talk about a job opportunity, discuss the crazy weather we've been having, or play a game of chess, you can reach me through the following communication channels:</p>

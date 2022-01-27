@@ -1,7 +1,12 @@
 import './index.css';
+
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
+
+import Nav from './components/Nav'
 import Hero from './components/Hero'
-import Project from './components/Project';
+import Projects from './components/Projects';
 import Contact from './components/Contact';
+
 
 const projects = [
   {
@@ -14,7 +19,7 @@ const projects = [
         'Handlebars'
       ],
       liveLink: 'http://ranter2-0.herokuapp.com',
-      ghLink: 'https://github.com/maplesyrupman/Ranter',
+      ghLink: 'https://github.com/maplesyrupman/Ranter/blob/main/README.md',
       image: require('./images/projects/ranter.png')
   },
   {
@@ -23,22 +28,37 @@ const projects = [
     technologies: [
       'React'
     ],
-    liveLink: 'http://ranter2-0.https://maplesyrupman.github.io/photo-port/',
+    liveLink: 'https://maplesyrupman.github.io/photo-port/',
     ghLink: 'https://github.com/maplesyrupman/photo-port/blob/main/README.md',
     image: require('./images/projects/photo-port.png')
+  },
+  {
+    title: 'Shop-Shop',
+    explanation: 'E-Commerce site with shopping cart persistance',
+    technologies: [
+      'React',
+      'GraphQL',
+      'Apollo Server',
+      'Swipe',
+      'Redux'
+    ],
+    liveLink: 'https://shop-shop-2000.herokuapp.com/',
+    ghLink: 'https://github.com/maplesyrupman/shop-shop/blob/main/README.md',
+    image: require('./images/projects/shop-shop.png')
   }
 ] 
 
 function App() {
   return (
-    <div className='flex flex-col items-center py-10'>
-      <Hero />
-      <div className='lg:w-7/12'>
-        <h2 className='mb-4 text-4xl text-center'>Projects</h2>
-        {projects.map(project => <Project project={project} key={project.title}/>)}
-      </div>
-      <Contact />
-    </div>
+    <Router>
+      <Routes>
+        <Route path='/' element={<Nav />}>
+          <Route index element={<Hero />} />
+          <Route path='/projects' element={<Projects projects={projects} />} />
+          <Route path='/contact' element={<Contact />} />
+        </Route>
+      </Routes>
+    </Router>
 
   );
 }
