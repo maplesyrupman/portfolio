@@ -1,6 +1,6 @@
 import './index.css';
 
-import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
+import {HashRouter as Router, Routes, Route} from 'react-router-dom'
 
 import Nav from './components/Nav'
 import Hero from './components/Hero'
@@ -9,6 +9,21 @@ import Contact from './components/Contact';
 
 
 const projects = [
+  {
+    title: 'Bookworms',
+    explanation: 'A website where avid readers can create and join bookclubs and have discussions about the chapters.',
+    technologies: [
+      'React',
+      'Redux',
+      'NodeJS',
+      'Tailwindcss',
+      'MongoDB & Mongoose',
+      'GraphQL & Apollo Server',
+    ],
+    liveLink: 'https://bookworms-club.herokuapp.com/',
+    ghLink: 'https://github.com/maplesyrupman/bookworms/blob/main/README.md',
+    image: require('./images/projects/bookworms.png')
+  },
   {
       title: 'Ranter',
       explanation: 'A social media application inspired by Twitter.',
