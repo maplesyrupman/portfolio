@@ -10,6 +10,20 @@ import Contact from './components/Contact';
 
 const projects = [
   {
+    title: 'InfoShare',
+    explanation: 'A blogging application where users can read articles by their favorite authors or on topics they\'re interested in.',
+    technologies: [
+      'React',
+      'NodeJS',
+      'Tailwindcss',
+      'MongoDB & Mongoose',
+      'GraphQL & Apollo Server',
+    ],
+    liveLink: 'https://info-share.herokuapp.com/',
+    ghLink: 'https://github.com/maplesyrupman/techblog',
+    image: require('./images/projects/infoshare.png')
+  },
+  {
     title: 'Bookworms',
     explanation: 'A website where avid readers can create and join bookclubs and have discussions about the chapters.',
     technologies: [
@@ -60,6 +74,19 @@ const projects = [
     liveLink: 'https://shop-shop-2000.herokuapp.com/',
     ghLink: 'https://github.com/maplesyrupman/shop-shop/blob/main/README.md',
     image: require('./images/projects/shop-shop.png')
+  },
+  {
+    title: 'Say Word',
+    explanation: 'An app that helps users learn new words.',
+    technologies: [
+      'JavaScript',
+      'CSS',
+      'HTML', 
+      'Bootstrap'
+    ],
+    liveLink: 'https://maplesyrupman.github.io/say-word/',
+    ghLink: 'https://github.com/maplesyrupman/say-word',
+    image: require('./images/projects/say-word.png')
   }
 ] 
 

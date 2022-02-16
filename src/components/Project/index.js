@@ -34,11 +34,11 @@ export default function Project({ project }) {
                             <div className="flex flex-col">
                                 <a href={liveLink} className="whitespace-nowrap">
                                     <FaFF className='inline-block mb-0.5' />{' '}
-                                    <p className='inline-block hover:underline'>Live Site</p>
+                                    <p className='inline-block hover:underline'>Deployed</p>
                                 </a>
                                 <a href={ghLink} className="whitespace-nowrap">
                                     <FaGithub className="inline-block mb-0.5" />{' '}
-                                    <p className="inline-block hover:underline">README</p>
+                                    <p className="inline-block hover:underline">Repository</p>
                                 </a>
                             </div>
                         </div>
