@@ -8,7 +8,7 @@ export default function Hero() {
             <div className="">
             <img src={require('../../images/hero.png')}></img>
             </div>
-            <p>I create fullstack applications using Tailwindcss, Bootstrap, React, GraphQl, Express, Node, MongoDB, and MySQL. Althought these are the technologies I am most comfortable with, I love learning new ways to help me efficiently solve problems and build powerful applications.</p>
+            <p>I create fullstack applications using React, Tailwind CSS, Bootstrap, GraphQl, Express, Node, MongoDB, and MySQL. Althought these are the technologies I am most comfortable with, I love learning new ways to help me efficiently solve problems and build powerful applications.</p>
             <p>To relax I enjoy reading, play chess, and hitting the weights. I also love spending time with my 4 year old son playing hide and seek and making really tall but structurally insecure lego towers.</p>
         </div>
     )

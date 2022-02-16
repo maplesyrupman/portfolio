@@ -12,7 +12,11 @@ export default function Project({ project }) {
             <div {...getCollapseProps()}>
                 <div className='content'>
                     <div className="max-w-full p-12">
-                        <img src={image} className="border border-double border-4 border-slate-400" />
+                        <a href={liveLink}
+                        target='_blank'
+                        >
+                            <img src={image} className="border border-double border-4 border-slate-400" />
+                        </a>
                     </div>
                     <div className="p-6 bg-black">
                         <div className="">
@@ -32,11 +36,19 @@ export default function Project({ project }) {
                                 </ul>
                             </div>
                             <div className="flex flex-col">
-                                <a href={liveLink} className="whitespace-nowrap">
+                                <a 
+                                href={liveLink} 
+                                target='_blank'
+                                className="whitespace-nowrap"
+                                >
                                     <FaFF className='inline-block mb-0.5' />{' '}
                                     <p className='inline-block hover:underline'>Deployed</p>
                                 </a>
-                                <a href={ghLink} className="whitespace-nowrap">
+                                <a 
+                                href={ghLink} 
+                                target='_blank'
+                                className="whitespace-nowrap"
+                                >
                                     <FaGithub className="inline-block mb-0.5" />{' '}
                                     <p className="inline-block hover:underline">Repository</p>
                                 </a>
