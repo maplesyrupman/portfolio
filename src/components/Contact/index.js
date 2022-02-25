@@ -16,7 +16,7 @@ export default function Contact() {
                         </a>
                     </li>
                     <li>
-                        <a href='linkedin.com/in/william-weiland-msm'>
+                        <a href='https://linkedin.com/in/william-weiland-msm/'>
                             <FaLinkedin className="inline-block mb-0.5" />
                             LinkedIn
                             </a>
