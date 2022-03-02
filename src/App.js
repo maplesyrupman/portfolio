@@ -14,8 +14,8 @@ const projects = [
     explanation: 'A blogging application where users can read articles by their favorite authors or on topics they\'re interested in.',
     technologies: [
       'React',
-      'NodeJS',
-      'Tailwindcss',
+      'Node.js',
+      'Tailwind CSS',
       'MongoDB & Mongoose',
       'GraphQL & Apollo Server',
     ],
@@ -29,8 +29,8 @@ const projects = [
     technologies: [
       'React',
       'Redux',
-      'NodeJS',
-      'Tailwindcss',
+      'Node.js',
+      'Tailwind CSS',
       'MongoDB & Mongoose',
       'GraphQL & Apollo Server',
     ],
@@ -42,7 +42,7 @@ const projects = [
       title: 'Ranter',
       explanation: 'A social media application inspired by Twitter.',
       technologies: [
-        'NodeJS',
+        'Node.js',
         'Bootstrap',
         'MySQL & Seqluelize',
         'Handlebars'
