@@ -10,6 +10,18 @@ import Contact from './components/Contact';
 
 const projects = [
   {
+    title: 'Hatchways API',
+    explanation: 'A RESTful API that queries an external API and sorts the responses by various parameters. (Not deployed)',
+    technologies: [
+      'Node.js',
+      'Express.js',
+      'node-cache'
+    ],
+    liveLink: 'https://github.com/maplesyrupman/hachewaysAPI',
+    ghLink: 'https://github.com/maplesyrupman/hachewaysAPI',
+    image: require('./images/projects/hatchwaysAPI.png')
+  },
+  {
     title: 'InfoShare',
     explanation: 'A blogging application where users can read articles by their favorite authors or on topics they\'re interested in.',
     technologies: [
